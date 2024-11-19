@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sudoku-container">
+    <div id="grid-size-container">
+            <label for="grid-size">Enter Sudoku Size (e.g., 9 for 9x9): </label>
+            <input type="number" id="grid-size" value="9" min="4" max="16" />
+            <button id="generate-grid" class="btn">Generate Grid</button>
+        </div>
+        <div id="grid-container">
+            <form id="sudoku-form"></form>
+            <div id="sudoku-buttons">
+                <button id="solve-button">Solve</button>
+                <button id="reset-button">Reset</button>
+            </div>
+        </div>
+            
+        <div id="error-message" style="color: red; display: none;">Invalid input: Please fix duplicates in row, column, or subgrid.</div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
